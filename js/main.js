@@ -109,3 +109,15 @@ $("#form-wont-vote").submit(function(event) {
     event.preventDefault();
 });
 */
+
+$(".button-yes").click(function() {
+  $(".result").addClass('display-result');
+  $("#form-will-vote").addClass('display-form');
+  $("#form-wont-vote").removeClass('display-form');
+});
+
+$(".button-no").click(function() {
+  $(".result").addClass('display-result');
+  $("#form-wont-vote").addClass('display-form');
+  $("#form-will-vote").removeClass('display-form');
+});
