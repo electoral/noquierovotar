@@ -140,10 +140,6 @@ main {
 /*-----------------------------------------------------------------------------
  *           FORM            
  *---------------------------------------------------------------------------*/
-.form-no,
-.form-yes {
-  display: none;
-}
 
 .form-text {
   padding: 10px;
@@ -167,3 +163,14 @@ main {
   background: #8CC63F;
   color: #fff;
 }
+
+.form-no,
+.form-yes {
+  display: none;
+}
+
+.display-form,
+.display-result {
+  display: block;
+}
+ 
