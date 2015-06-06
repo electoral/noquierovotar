@@ -1,0 +1,116 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+.droid-serif {
+  font-family: 'Droid Serif', serif;
+}
+ 
+
+/*-----------------------------------------------------------------------------
+ *           HEADER            
+ *---------------------------------------------------------------------------*/
+.main-header {
+  background: #ff0000;
+  color: #fff;
+}
+
+.main-heading {
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+ 
+.main-heading span {
+  display: block;
+  font-size: 118px;
+}
+ 
+/*-----------------------------------------------------------------------------
+ *           ITEMS            
+ *---------------------------------------------------------------------------*/
+.table-row {
+}
+
+.item {
+  margin: 20px 0;
+}
+ 
+   
+.item-inner {
+  display: table-row;
+}
+
+.item-circle-container {
+  background: #ff0000;
+  border-radius: 50%;
+  display: table;
+  height: 300px;
+  padding: 20px;
+  width: 300px;
+}
+
+.item-title-container {
+  border: 15px solid #fff;
+  border-radius: 50%;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.item-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.item-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 50px;
+  width: 80%;
+}
+
+.item-content-inner {
+  background: #e6e6e6;
+  border: 3px dashed #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+/* Buttons */
+.buttons { /* the button container */
+  margin-bottom: 40px;
+}
+ 
+.button { /* common button styles */
+  color: #fff;
+  border: 0;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+
+.button-no {
+  background: #ff0000;
+}
+ 
+.button-yes {
+  background: #8cc63f;
+  float: right;
+}
+ 
+/* Result Area */
+.result {
+  background: #ccc;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+}
+ 
