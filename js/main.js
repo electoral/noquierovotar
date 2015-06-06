@@ -112,12 +112,14 @@ $("#form-wont-vote").submit(function(event) {
 
 $(".button-yes").click(function() {
   $(".result").addClass('display-result');
-  $("#form-will-vote").addClass('display-form');
-  $("#form-wont-vote").removeClass('display-form');
+  $(".form-yes").addClass('display-form');
+  $(".form-no").removeClass('display-form');
+  $(".consequences").hide();
 });
 
 $(".button-no").click(function() {
   $(".result").addClass('display-result');
-  $("#form-wont-vote").addClass('display-form');
-  $("#form-will-vote").removeClass('display-form');
+  $(".form-no").addClass('display-form');
+  $(".form-yes").removeClass('display-form');
+  $(".consequences").show();
 });
