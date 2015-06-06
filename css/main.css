@@ -131,6 +131,7 @@ main {
  
 /* Result Area */
 .result {
+  display: none;
   background: #ccc;
   margin-bottom: 40px;
   padding: 20px 30px;
