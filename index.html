@@ -130,46 +130,93 @@
         </div>
 
         <div class="container">
-          <div class="result">
-            <!-- FORMULARIO SI QUIERO VOTAR -->
-            <form action="http://edutrul.createsend.com/t/i/s/tlqe/" method="post" id="subForm">
-                <h3>Si votare estas elecciones</h3>
-                <p>
-                    <label for="fieldName">Nombre y Apellido</label><br />
-                    <input id="fieldName" name="cm-name" type="text" />
-                </p>
-                <p>
-                    <label for="fieldEmail">Correo</label><br />
-                    <input id="fieldEmail" name="cm-tlqe-tlqe" type="email" required />
-                </p>
-                <p>
-                    <label for="fieldjluiju">DNI</label><br />
-                    <input id="fieldjluiju" name="cm-f-jluiju" type="text" />
-                </p>
-                <p>
-                    <button type="submit">SI VOY A VOTAR</button>
-                </p>
-            </form>
+          <div class="result row">
+
             <!-- FIN FORMULARIO SI QUIERO VOTAR -->
-            
-            <form action="http://edutrul.createsend.com/t/i/s/tlqc/" method="post" id="subForm">
-                <h3>No votare estas elecciones</h3>
-                <p>
-                    <label for="fieldName">Nombre y Apellido</label><br />
-                    <input id="fieldName" name="cm-name" type="text" />
-                </p>
-                <p>
-                    <label for="fieldEmail">Correo</label><br />
-                    <input id="fieldEmail" name="cm-tlqc-tlqc" type="email" required />
-                </p>
-                <p>
-                    <label for="fieldjluijl">DNI</label><br />
-                    <input id="fieldjluijl" name="cm-f-jluijl" type="text" />
-                </p>
-                <p>
-                    <button type="submit">NO VOY A VOTAR</button>
-                </p>
-            </form>
+            <div class="col-md-6">
+              <h3>Consecuencias</h3>
+              <ul>
+                <li>Multa de xxx soles</li>
+                <li>Bloqueo del DNI</li>
+                <li>Otras consecuencias</li>
+              </ul>
+                
+              <h3>Enlaces informativos</h3>
+              <ul>
+                <li><a href="#">Guía de políticos</a></li>
+                <li><a href="#">Multas</a></li>
+                <li><a href="#">Voto Informado</a></li>
+                <li><a href="#">Transparencia</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+
+              <!-- FORMULARIO NO QUIERO VOTAR -->
+              <div class="form-no">
+                <form action="http://edutrul.createsend.com/t/i/s/tlqc/" method="post" id="subForm">
+                    <h3>No votare estas elecciones</h3>
+
+                    <div class="form-label">
+                      <label for="fieldName">Nombre y Apellido</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldName" class="form-text" name="cm-name" type="text" />
+                    </div>
+
+                    <div class="form-label">
+                      <label for="fieldEmail">Correo</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldEmail" class="form-text" name="cm-tlqc-tlqc" type="email" required />
+                    </div>
+
+                    <div class="form-label">
+                      <label for="fieldjluijl">DNI</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldjluijl" class="form-text" name="cm-f-jluijl" type="text" />
+                    </div>
+
+                    <div class="form-item">
+                        <button class="form-submit" type="submit">NO VOY A VOTAR</button>
+                    </div>
+                </form>
+              </div><!-- /.form-no -->
+
+              <!-- FORMULARIO SI QUIERO VOTAR -->
+              <div class="form-yes">
+                
+                <form action="http://edutrul.createsend.com/t/i/s/tlqe/" method="post" id="subForm">
+                    <h3>Si votare estas elecciones</h3>
+                    <div class="form-label">
+                      <label for="fieldName">Nombre y Apellido</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldName" class="form-text" name="cm-name" type="text" />
+                    </div>
+
+                    <div class="form-label">
+                      <label for="fieldEmail">Correo</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldEmail" class="form-text" name="cm-tlqe-tlqe" type="email" required />
+                    </div>
+
+                    <div class="form-label">
+                      <label for="fieldjluiju">DNI</label><br />
+                    </div>
+                    <div class="form-item">
+                      <input id="fieldjluiju" class="form-text" name="cm-f-jluiju" type="text" />
+                    </div>
+
+                    <div class="form-item">
+                      <button type="submit" class="form-submit">SI VOY A VOTAR</button>
+                    </div>
+                </form>
+              </div><!-- /.form-yes -->
+
+            </div>
           </div>
         </div>
 

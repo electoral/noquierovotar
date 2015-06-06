@@ -136,3 +136,28 @@ main {
   padding: 20px 30px;
 }
  
+/*-----------------------------------------------------------------------------
+ *           FORM            
+ *---------------------------------------------------------------------------*/
+.form-text {
+  padding: 10px;
+  width: 100%;
+}
+
+.form-submit {
+  background: #666;
+  border: 0;
+  font-weight: 700;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.form-no .form-submit {
+  background: red;
+  color: #fff;
+}
+ 
+.form-yes .form-submit {
+  background: #8CC63F;
+  color: #fff;
+}
