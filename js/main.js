@@ -123,3 +123,98 @@ $(".button-no").click(function() {
   $(".form-yes").removeClass('display-form');
   $(".consequences").show();
 });
+
+$('.textfield-dni').keyup(function () {
+      this.value = this.value.replace(/[^0-9\.]/g,''); // < cualquier nÃºmero.
+      jQuery(this).val(this.value.substr(0, 8)); // < hasta 8 caracteres.
+      if (this.value.length == 8) {
+         jQuery(".form-submit" ).prop("disabled", false);
+         jQuery('.ruc-error-message').remove();
+      }
+      else if (this.value.length > 0) {
+        jQuery(".form-submit" ).prop("disabled", true);
+        if (!jQuery('.ruc-error-message').length) {
+          jQuery('<div class="ruc-error-message"> ' + Drupal.t('The RUC must be 11 digits.') + '</div>').insertAfter('#edit-ruc');
+        }
+      }
+      if (jQuery('.ruc-error-message').length && this.value.length == 0) {
+          jQuery('.ruc-error-message').remove();
+      }
+
+  });
+    
+$('.textfield-dni').keyup(function () {
+      this.value = this.value.replace(/[^0-9\.]/g,''); // < cualquier nÃºmero.
+      jQuery(this).val(this.value.substr(0, 8)); // < hasta 8 caracteres.
+      if (this.value.length == 8) {
+         jQuery(".form-submit" ).prop("disabled", false);
+         jQuery('.ruc-error-message').remove();
+      }
+      else if (this.value.length > 0) {
+        jQuery(".form-submit" ).prop("disabled", true);
+        if (!jQuery('.ruc-error-message').length) {
+          jQuery('<div class="ruc-error-message"> ' + Drupal.t('The RUC must be 11 digits.') + '</div>').insertAfter('#edit-ruc');
+        }
+      }
+      if (jQuery('.ruc-error-message').length && this.value.length == 0) {
+          jQuery('.ruc-error-message').remove();
+      }
+
+  });
+    
+$('.textfield-dni').keyup(function () {
+      this.value = this.value.replace(/[^0-9\.]/g,''); // < cualquier nÃºmero.
+      jQuery(this).val(this.value.substr(0, 8)); // < hasta 8 caracteres.
+      if (this.value.length == 8) {
+         jQuery(".form-submit" ).prop("disabled", false);
+         jQuery('.ruc-error-message').remove();
+      }
+      else if (this.value.length > 0) {
+        jQuery(".form-submit" ).prop("disabled", true);
+        if (!jQuery('.ruc-error-message').length) {
+          jQuery('<div class="ruc-error-message"> ' + Drupal.t('The RUC must be 11 digits.') + '</div>').insertAfter('#edit-ruc');
+        }
+      }
+      if (jQuery('.ruc-error-message').length && this.value.length == 0) {
+          jQuery('.ruc-error-message').remove();
+      }
+
+  });
+    
+$('.textfield-dni').keyup(function () {
+      this.value = this.value.replace(/[^0-9\.]/g,''); // < cualquier nÃºmero.
+      jQuery(this).val(this.value.substr(0, 8)); // < hasta 8 caracteres.
+      if (this.value.length == 8) {
+         jQuery(".form-submit" ).prop("disabled", false);
+         jQuery('.ruc-error-message').remove();
+      }
+      else if (this.value.length > 0) {
+        jQuery(".form-submit" ).prop("disabled", true);
+        if (!jQuery('.ruc-error-message').length) {
+          jQuery('<div class="ruc-error-message"> ' + Drupal.t('The RUC must be 11 digits.') + '</div>').insertAfter('#edit-ruc');
+        }
+      }
+      if (jQuery('.ruc-error-message').length && this.value.length == 0) {
+          jQuery('.ruc-error-message').remove();
+      }
+
+  });
+    
+$('.textfield-dni').keyup(function () {
+  this.value = this.value.replace(/[^0-9\.]/g,''); // < cualquier nÃºmero.
+  $(this).val(this.value.substr(0, 8)); // < hasta 8 caracteres.
+  if (this.value.length == 8) {
+     $(".form-submit" ).prop("disabled", false);
+     $('.ruc-error-message').remove();
+  }
+  else if (this.value.length > 0) {
+    $(".form-submit" ).prop("disabled", true);
+    if (!$('.ruc-error-message').length) {
+      $('<div class="ruc-error-message"> ' + Drupal.t('The RUC must be 11 digits.') + '</div>').insertAfter('#edit-ruc');
+    }
+  }
+  if ($('.ruc-error-message').length && this.value.length == 0) {
+    $('.ruc-error-message').remove();
+  }
+
+});
