@@ -218,3 +218,13 @@ $('.textfield-dni').keyup(function () {
   }
 
 });
+
+
+$('input').blur(function() {
+  if(!this.value) {
+    $(this).parents().addClass('warning');
+  }
+  else {
+    $(this).parents().removeClass('warning');
+  }
+});
